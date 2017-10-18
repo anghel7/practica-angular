@@ -1,17 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { 
+import {
   MATERIAL_COMPATIBILITY_MODE,
-  MatCheckboxModule
- } from '@angular/material';
-
+  MatInputModule,
+  MatFormFieldModule,
+  MatButtonModule,
+  MatDialogModule,
+  MatDialog,
+  MatDialogRef,
+  MAT_DIALOG_DATA
+} from '@angular/material';
 @NgModule({
   imports: [
     CommonModule,
-    MatCheckboxModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   exports: [
-    MatCheckboxModule
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [
     { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }
